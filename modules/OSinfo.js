@@ -21,5 +21,5 @@ function getOSinfo() {
 
 exports.print = getOSinfo;
 
-var timeFormat = require('./timeFormating');
+var timeFormat = require('/timeFormat');
 timeFormat.print();

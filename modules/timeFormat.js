@@ -7,7 +7,7 @@ function timeFormating() {
 	var hour;
 	var totalTime;
 	var time;
-	uptime = os.uptime();
+	totaltime = os.uptime();
 	hour = totalTime / 3600;
 	minute = (totalTime % 3600) / 60;
 	second = (totalTime % 3600) % 60;
