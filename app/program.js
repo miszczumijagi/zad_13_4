@@ -26,5 +26,5 @@ process.stdin.on('readable', function() {
 var OSinfo = require('../modules/OSinfo');
 OSinfo.print();
 
-var timeFormat = require('/timeFormat');
+var timeFormat = require('timeFormat');
 timeFormat.print();
