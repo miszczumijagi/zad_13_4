@@ -1,4 +1,6 @@
 var os = require('os');
+var OSinfo = require('../modules/OSinfo');
+OSinfo.print();
 
 process.stdin.setEncoding('utf-8');
 process.stdin.on('readable', function() {
@@ -14,7 +16,7 @@ process.stdin.on('readable', function() {
                 process.stdout.write('hello!\n');
                 break;
             case '/getOSinfo':
-			    getOSinfo();
+			    OSinfo.print();
 
 			    break;
             default:
@@ -23,6 +25,6 @@ process.stdin.on('readable', function() {
     }
 });
 
-var OSinfo = require('../modules/OSinfo');
-OSinfo.print();
+
+
 
